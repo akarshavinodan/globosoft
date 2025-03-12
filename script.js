@@ -2,10 +2,13 @@ const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 const dropdowns = document.querySelectorAll('.dropdown');
 
+// Toggle menu on click
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('active'); // Add this line to toggle the icon state
 });
 
+// Handle dropdown clicks on mobile
 dropdowns.forEach(dropdown => {
     dropdown.addEventListener('click', (e) => {
         if (window.innerWidth <= 1024) {
@@ -15,9 +18,19 @@ dropdowns.forEach(dropdown => {
     });
 });
 
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+        navLinks.classList.remove('active');
+        menuToggle.classList.remove('active');
+    }
+});
+
+// Reset menu state on window resize
 window.addEventListener('resize', () => {
     if (window.innerWidth > 1024) {
         navLinks.classList.remove('active');
+        menuToggle.classList.remove('active');
         dropdowns.forEach(dropdown => {
             dropdown.classList.remove('active');
         });
