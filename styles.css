@@ -551,7 +551,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background: #0b0f19;
-    padding: 50px 10%;
+    padding: 80px 10%;
     color: white;
     overflow: hidden;
 }
@@ -562,12 +562,24 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
+    gap: 50px; /* Adds space between text & visual */
 }
 
 /* Content Area */
 .ai-content {
-    max-width: 600px;
+    max-width: 650px;
+}
+
+/* Headings */
+.ai-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.ai-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 /* Gradient Text Effect */
@@ -575,8 +587,14 @@ body {
     background: linear-gradient(90deg, #ff6600, #ff3366, #7b00ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 2.5rem;
     font-weight: bold;
+}
+
+/* Paragraph */
+.ai-content p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
 }
 
 /* Reveal Animation */
@@ -593,28 +611,28 @@ body {
 /* Read More Button */
 .glow-button {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 24px;
+    padding: 14px 30px;
     background: linear-gradient(90deg, #ff6600, #ff3366);
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
-    box-shadow: 0 0 10px rgba(255, 102, 0, 0.7);
+    box-shadow: 0 0 15px rgba(255, 102, 0, 0.7);
 }
 
 .glow-button:hover {
-    box-shadow: 0 0 20px rgba(255, 102, 0, 1);
-    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 102, 0, 1);
+    transform: scale(1.08);
 }
 
 /* Visual Area */
 .ai-visual {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
 }
 
 /* Floating Elements */
@@ -627,19 +645,19 @@ body {
 /* Animated Tech Circles */
 .tech-circle {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     background: linear-gradient(135deg, #ff3366, #7b00ff);
     border-radius: 50%;
     opacity: 0.8;
-    filter: blur(5px);
+    filter: blur(8px);
     animation: float 5s infinite ease-in-out alternate;
 }
 
 /* Positions */
-.c1 { top: 10%; left: 10%; animation-delay: 0s; }
+.c1 { top: 5%; left: 15%; animation-delay: 0s; }
 .c2 { top: 50%; left: 50%; transform: translate(-50%, -50%); animation-delay: 1s; }
-.c3 { bottom: 10%; right: 10%; animation-delay: 2s; }
+.c3 { bottom: 5%; right: 15%; animation-delay: 2s; }
 
 /* Animations */
 @keyframes fadeInUp {
