@@ -1215,9 +1215,8 @@ body {
 }
 
 
-/* ----------------------------------------------------------------------------------------------- */
+/* -----------------------------------client section------------------------------------------------------------ */
 
-/* Clients Section */
 .clients-section {
     padding: 100px 0;
     background: linear-gradient(135deg, #0b0f19, black);
@@ -1376,7 +1375,7 @@ body {
     }
 }
 
-/* -------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------contact section----------------------------------------------------------------- */
 
 .contact-info {
     position: relative;
@@ -1614,7 +1613,85 @@ body {
     }
 }
 
-/* -------------------------------------------------------------------------------------------------- */
+/* --------------------------------------Careers Section------------------------------------------------------------ */
+
+.careers-section {
+    padding: 120px 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0.9), rgba(255,0,0,0.8)), 
+                url('images/career.jpeg') center/cover no-repeat;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.careers-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.careers-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #ff3366, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.careers-section h3 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.careers-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.career-btn {
+    display: inline-block;
+    padding: 18px 40px;
+    background: linear-gradient(45deg, #ff3366, red);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.career-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 51, 102, 0.3);
+    background: transparent;
+    border-color: #ff3366;
+}
+
+@media (max-width: 768px) {
+    .careers-section {
+        padding: 80px 0;
+    }
+
+    .careers-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .careers-section h3 {
+        font-size: 2rem;
+    }
+
+    .careers-section p {
+        font-size: 1.1rem;
+    }
+}
+
+/* -----------------------------------------footer section----------------------------------------------------------- */
 
 .footer-section {
     background: linear-gradient(135deg, #0b0f19, black);
