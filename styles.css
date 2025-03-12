@@ -678,6 +678,13 @@ body {
 
 
 /* -----------------------------------ai section ends----------------------------------------------------------------- */
+
+.services{
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 /* Flip Card Styles */
 .flip-card {
     background-color: transparent;
