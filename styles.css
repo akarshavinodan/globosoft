@@ -377,9 +377,18 @@ body {
 }
 
 /* Counter Boxes Styling */
-.bg-color-2, .bg-color {
+.bg-color-2 {
     border-radius: 15px;
-    margin-top: -30px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+.bg-color{
+    border-radius: 15px;
+    margin-bottom: 40px;
     position: relative;
     z-index: 2;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
@@ -391,13 +400,10 @@ body {
     transform: translateY(10px);
 }
 
-.bg-color-2 {
+.bg-color-2, .bg-color {
     background: linear-gradient(135deg, #ff0000, #ff4444);
 }
 
-.bg-color {
-    background: linear-gradient(135deg, #333333, #666666);
-}
 
 .de_count {
     padding: 25px 20px;
